@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>canvas_render_heart</title>
+    <style>
+	body{
+		filter: blur(0.5px);
+		background: #000;
+	}
+	.box{
+		position: absolute;
+		top: 10%;
+		left: 5%;
+		width: 500px;
+		height: 500px;
+		background: rgba(255,0, 10, .2);
+		border-radius: 50%;
+		mix-blend-mode: screen;
+		filter: blur(100px);
+	}
+    canvas{
+      display:block;
+     /*  border:2px solid red;*/
+       margin:0 auto;
+      
+    }
+  h1{
+    color:white;
+    position:absolute;
+    top:80%;
+    left:60%;
+    text-align:center;
+    font-weight:400;
+    text-shadow:1px 1px 8px rgba(255,0,0,.7)
+   }
+    </style>
+</head>
+<body>
+    <h1><i>雪杰.</i></h1>
+	<div class="box"></div>
+    <canvas id="heart"></canvas>
+	
+</body>
+</html>
+<script>
+	
+        var canvas=document.getElementById("heart");
+        canvas.width=600;
+        canvas.height=600;
+        canvas.style.width=canvas.width+"px";
+        canvas.
